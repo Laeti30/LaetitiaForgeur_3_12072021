@@ -1,0 +1,17 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. \r L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Laeti30/LaetitiaForgeur_3_12072021"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserlist": "last 4 versions"
+}

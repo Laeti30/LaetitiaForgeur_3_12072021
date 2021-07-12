@@ -1,0 +1,23 @@
+.operation {
+    padding: 50px 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgb(190, 190, 190);
+    background: $color-lightgrey;
+    &__number {
+        display: flex;
+        height: 24px;
+        width: 24px;
+        background: $color-primary;
+        border-radius: 50%;
+        color: white;
+        span {
+            margin: auto;
+        }
+    }
+}
