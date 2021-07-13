@@ -1,0 +1,21 @@
+footer {
+    background: rgb(53, 53, 53);
+    color: white;
+    padding: 25px 25px 30px;
+    line-height: 1.7;
+    img {
+        filter: invert(1);
+        width: 105px;
+        margin-bottom: 5px;
+    }
+    a {
+        color: white;
+        i {
+            font-size: 0.8rem;
+            width: 10px;
+            margin-right: 15px;
+        }
+    }
+
+}
+

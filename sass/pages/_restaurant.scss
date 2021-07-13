@@ -1,0 +1,55 @@
+.restaurant {
+    padding: 50px 20px;
+    background: $color-lightgrey;
+}
+
+.restaurantBox {
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: $boxShadow;
+    margin-bottom: 20px;
+    &__Img {
+        position: relative;
+        img {
+            width: 100%;
+            height: 173px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        span {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: darken($color-tertiary, 35%);
+            background: $color-tertiary;
+            border-radius: 3px;
+            padding: 7px 10px;
+            font-weight: 700;
+        }
+    }
+    &__Data {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        h3 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        p {
+            font-weight: 300;
+        }
+    }
+}
+
+.like {
+    cursor:pointer;
+    margin-right: 10px;
+    .heartEmpty {
+        color: grey;
+    }
+    .heartFull {
+        display: none;
+    }
+}
