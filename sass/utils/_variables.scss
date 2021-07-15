@@ -6,3 +6,8 @@ $color-darkgrey: #EAEAEA;
 $color-lightgrey: #F6F6F6;
 
 $boxShadow: 0 5px 10px rgb(207, 207, 207);
+
+$breakpoints: (
+    tablet: 660px,
+    desktop: 1024px
+)

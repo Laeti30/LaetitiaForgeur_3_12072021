@@ -1,10 +1,5 @@
-@mixin button {
-    height: 50px;
-    color: white;
-    font-weight: 500;
-    background: linear-gradient(180deg, $color-secondary, $color-primary);
-    border-radius: 25px;
-    cursor: pointer;
-    padding: 15px 25px;
-    box-shadow: 0 5px 10px rgb(190, 190, 190);
+@mixin breakpoint($breakpoint) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+        @content;
+    }
 }

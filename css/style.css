@@ -69,13 +69,25 @@ h2 {
   margin-bottom: 20px;
 }
 
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+}
+
 header {
   display: flex;
   justify-content: center;
   height: 63px;
+  position: relative;
 }
 header img {
   width: 170px;
+}
+header i {
+  color: grey;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 footer {
@@ -114,6 +126,9 @@ footer a i {
 }
 
 .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background: #F6F6F6;
   padding: 40px 30px 70px;
@@ -123,6 +138,9 @@ footer a i {
   font-size: 1.1rem;
   font-weight: 100;
   line-height: 20px;
+}
+.presentation a {
+  text-decoration: none;
 }
 
 .operation {
@@ -218,15 +236,109 @@ footer a i {
   display: none;
 }
 
+main img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  padding-bottom: 30px;
+  /*position: absolute;
+  top: 280px;*/
+  transform: translateY(-50px);
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu .restaurantName {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .menu .menuList {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.restaurantName {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 40px 23px 20px;
+}
+.restaurantName i {
+  color: grey;
+}
+
+.menuList {
+  padding-left: 20px;
+  padding-right: 15px;
+  margin-bottom: 40px;
+}
+.menuList h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.menuList h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40px;
+  background: #99E2D0;
+}
+.menuList__dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px #cfcfcf;
+  padding: 10px 20px 10px 15px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.menuList__dish h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.menuList__dish p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.menuList__dish__price {
+  font-weight: 500;
+}
+
+.footer {
+  position: relative;
+}
+
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   color: white;
   font-weight: 500;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 25px;
   cursor: pointer;
-  padding: 15px 25px;
   box-shadow: 0 5px 10px #bebebe;
+}
+.button--explore {
+  width: 220px;
+}
+.button--order {
+  width: 185px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

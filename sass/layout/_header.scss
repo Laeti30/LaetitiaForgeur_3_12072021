@@ -3,8 +3,17 @@ header {
     display: flex;
     justify-content: center;
     height: 63px;
+    position: relative;
     img{
         width: 170px;
     }
+    i {
+        color: grey;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
 }
 
+
+ 
