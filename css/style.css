@@ -383,42 +383,65 @@ main img {
 .menuList__dish {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  cursor: pointer;
   background: white;
   border-radius: 15px;
   box-shadow: 0 5px 10px #cfcfcf;
-  padding: 10px 20px 10px 15px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 .menuList__dish__name {
   width: 80%;
+  padding: 10px 0 10px 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: width 400ms linear;
 }
 .menuList__dish__name h3 {
   font-weight: 500;
   font-size: 1.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menuList__dish__name p {
   font-weight: 300;
   font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menuList__dish__price {
+  align-self: flex-end;
   font-weight: 500;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.menuList .checkbox {
+  display: none;
+  background-color: #99E2D0;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+}
+.menuList .checkbox i {
+  color: white;
+  font-size: 24px;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.menuList__dish:hover .menuList__dish__name {
+  width: 60%;
 }
+.menuList__dish:hover .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: checkbox 400ms forwards;
+}
+.menuList__dish:hover .checkbox i {
+  animation: iconRotation 400ms 100ms;
+}
+
 .anim--1 {
   animation: fade 1.5s 0ms;
 }
@@ -435,6 +458,36 @@ main img {
   animation: fade 1.5s 450ms;
 }
 
+@keyframes checkbox {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    width: 70px;
+  }
+}
+@keyframes iconRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .button {
   display: flex;
   justify-content: center;

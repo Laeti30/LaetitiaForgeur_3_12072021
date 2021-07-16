@@ -4,6 +4,10 @@
     }
 }
 
+@mixin transition-timing($type){
+    transition: $type 400ms linear;
+}
+
 @mixin like {
     cursor:pointer;
     position: relative;

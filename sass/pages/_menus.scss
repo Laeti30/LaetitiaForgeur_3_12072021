@@ -60,42 +60,65 @@ main {
     &__dish {
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        cursor: pointer;
         background: white;
         border-radius: 15px;
         box-shadow: $boxShadow;
-        padding: 10px 20px 10px 15px;
         margin-bottom: 15px;
         line-height: 1.5;
         &__name {
             width: 80%;
+            padding: 10px 0 10px 15px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            @include transition-timing(width);
             h3 {
                 font-weight: 500;
                 font-size: 1.1rem;
-    
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             p {
                 font-weight: 300;
                 font-size: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         }
         &__price {
+            align-self: flex-end;
             font-weight: 500;
+            padding-right: 15px;
+            padding-bottom: 10px;
+        }
+    }
+    .checkbox {
+        display: none;
+        background-color: $color-tertiary;
+        height: 70px;
+        border-radius: 0 15px 15px 0;
+        i {
+            color: white;
+            font-size: 24px;
         }
     }
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
+.menuList__dish:hover {
+    .menuList__dish__name {
+        width: 60%;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
+    .checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: checkbox 400ms forwards;
+        i {
+            animation: iconRotation 400ms 100ms;
+        }
     }
 }
 
@@ -111,6 +134,41 @@ main {
 .anim--4 {
     animation:fade 1.5s 450ms;
 }
+
+@keyframes checkbox {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+        width: 0px;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+        width:70px;
+    }
+}
+
+@keyframes iconRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 
 
 
