@@ -5,7 +5,7 @@ $color-tertiary: #99E2D0;
 $color-mediumgrey: #EAEAEA;
 $color-lightgrey: #F6F6F6;
 $color-shadowgrey: #cfcfcf;
-$color-gradient: linear-gradient(180deg, $color-secondary, $color-primary);
+$color-gradient: linear-gradient($color-secondary, $color-primary);
 
 $boxShadow: 0 5px 10px $color-shadowgrey;
 

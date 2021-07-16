@@ -35,6 +35,7 @@
     }
     &:hover {
         background: lighten($color-primary, 35%);
+        box-shadow: 0 5px 10px darken($color-shadowgrey,30%) ;
         i {
             color: $color-primary;
         }

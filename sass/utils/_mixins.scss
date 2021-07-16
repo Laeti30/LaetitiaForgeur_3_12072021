@@ -7,22 +7,31 @@
 @mixin like {
     cursor:pointer;
     position: relative;
+    .far, .fas {
+        font-size: 25px;
+    }
     .heartEmpty {
         color: grey;
         position: absolute;
     }
     .heartFull {
         color: $color-primary;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         opacity: 0;
     }
     &:hover {
         .heartEmpty {
             opacity: 0;
-            transition: opacity 5000ms;
+            transition: opacity 400ms;
         }
         .heartFull {
             opacity: 1;
-            transition: opacity 5000ms;
+            transition: opacity 400ms;
         }
     }
 }
+
+
+  
