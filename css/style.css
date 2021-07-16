@@ -145,6 +145,27 @@ footer a i {
 
 .operation {
   padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 660px) {
+  .operation {
+    align-items: center;
+  }
+  .operation__List {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .operation__List {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .operation__List .step {
+    width: 30%;
+  }
 }
 
 .step {
@@ -190,6 +211,21 @@ footer a i {
 .restaurant {
   padding: 50px 20px;
   background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 660px) {
+  .restaurant {
+    align-items: center;
+  }
+  .restaurant__List {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurant__List .restaurantBox {
+    width: 45%;
+  }
 }
 
 .restaurantBox {

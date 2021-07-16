@@ -1,5 +1,24 @@
 .operation {
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+        align-items: center;
+        &__List {
+            width: 50%;
+            margin: auto;
+        }
+    } 
+    @include breakpoint(desktop) {
+        &__List {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .step {
+                width: 30%;
+            }
+        }
+    }
 }
 
 .step {

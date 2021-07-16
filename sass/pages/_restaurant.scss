@@ -1,6 +1,19 @@
 .restaurant {
     padding: 50px 20px;
     background: $color-lightgrey;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+        align-items: center;
+        &__List {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .restaurantBox {
+                width: 45%;
+            }
+        }
+    }
 }
 
 .restaurantBox {
