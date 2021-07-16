@@ -2,10 +2,12 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$color-darkgrey: #EAEAEA;
+$color-mediumgrey: #EAEAEA;
 $color-lightgrey: #F6F6F6;
+$color-shadowgrey: #cfcfcf;
+$color-gradient: linear-gradient(180deg, $color-secondary, $color-primary);
 
-$boxShadow: 0 5px 10px rgb(207, 207, 207);
+$boxShadow: 0 5px 10px $color-shadowgrey;
 
 $breakpoints: (
     tablet: 660px,

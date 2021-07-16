@@ -179,6 +179,12 @@ footer a i {
 .step p {
   font-weight: 500;
 }
+.step:hover {
+  background: #f2eafb;
+}
+.step:hover i {
+  color: #9356DC;
+}
 
 .restaurant {
   padding: 50px 20px;
@@ -227,15 +233,28 @@ footer a i {
 
 .like {
   cursor: pointer;
-  margin-right: 10px;
+  position: relative;
 }
 .like .heartEmpty {
   color: grey;
+  position: absolute;
 }
 .like .heartFull {
-  display: none;
+  color: #9356DC;
+  opacity: 0;
+}
+.like:hover .heartEmpty {
+  opacity: 0;
+  transition: opacity 5000ms;
+}
+.like:hover .heartFull {
+  opacity: 1;
+  transition: opacity 5000ms;
 }
 
+main {
+  background: #F6F6F6;
+}
 main img {
   width: 100%;
   height: 250px;
@@ -244,9 +263,9 @@ main img {
 
 .menu {
   width: 100%;
-  background: #F6F6F6;
   border-radius: 30px 30px 0 0;
   padding-bottom: 30px;
+  background: #F6F6F6;
   /*position: absolute;
   top: 280px;*/
   transform: translateY(-50px);
@@ -273,8 +292,26 @@ main img {
   justify-content: space-between;
   padding: 35px 40px 23px 20px;
 }
-.restaurantName i {
+
+.like {
+  cursor: pointer;
+  position: relative;
+}
+.like .heartEmpty {
   color: grey;
+  position: absolute;
+}
+.like .heartFull {
+  color: #9356DC;
+  opacity: 0;
+}
+.like:hover .heartEmpty {
+  opacity: 0;
+  transition: opacity 5000ms;
+}
+.like:hover .heartFull {
+  opacity: 1;
+  transition: opacity 5000ms;
 }
 
 .menuList {
@@ -305,11 +342,17 @@ main img {
   margin-bottom: 15px;
   line-height: 1.5;
 }
-.menuList__dish h3 {
+.menuList__dish__name {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menuList__dish__name h3 {
   font-weight: 500;
   font-size: 1.1rem;
 }
-.menuList__dish p {
+.menuList__dish__name p {
   font-weight: 300;
   font-size: 1rem;
 }
@@ -331,7 +374,13 @@ main img {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0 5px 10px #bebebe;
+  box-shadow: 0 5px 10px #cfcfcf;
+  z-index: 1;
+  position: relative;
+}
+.button:hover {
+  background: linear-gradient(180deg, #ff93e1, #a16be0);
+  box-shadow: 0 5px 10px #838383;
 }
 .button--explore {
   width: 220px;

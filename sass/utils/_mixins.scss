@@ -3,3 +3,26 @@
         @content;
     }
 }
+
+@mixin like {
+    cursor:pointer;
+    position: relative;
+    .heartEmpty {
+        color: grey;
+        position: absolute;
+    }
+    .heartFull {
+        color: $color-primary;
+        opacity: 0;
+    }
+    &:hover {
+        .heartEmpty {
+            opacity: 0;
+            transition: opacity 5000ms;
+        }
+        .heartFull {
+            opacity: 1;
+            transition: opacity 5000ms;
+        }
+    }
+}

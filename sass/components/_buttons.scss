@@ -5,10 +5,16 @@
     height: 50px;
     color: white;
     font-weight: 500;
-    background: linear-gradient(180deg, $color-secondary, $color-primary);
+    background: $color-gradient;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 5px 10px rgb(190, 190, 190);
+    box-shadow: $boxShadow;
+    z-index: 1;
+    position: relative;
+    &:hover {
+        background: linear-gradient(180deg, lighten($color-secondary,5%), lighten($color-primary,5%)) ;
+        box-shadow: 0 5px 10px darken($color-shadowgrey,30%) ;
+    }
     &--explore {
         width: 220px;
     }

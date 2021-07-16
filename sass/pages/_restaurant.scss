@@ -44,12 +44,5 @@
 }
 
 .like {
-    cursor:pointer;
-    margin-right: 10px;
-    .heartEmpty {
-        color: grey;
-    }
-    .heartFull {
-        display: none;
-    }
+    @include like
 }

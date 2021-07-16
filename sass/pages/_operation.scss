@@ -33,4 +33,10 @@
     p {
         font-weight: 500;
     }
+    &:hover {
+        background: lighten($color-primary, 35%);
+        i {
+            color: $color-primary;
+        }
+    }
 }
