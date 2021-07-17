@@ -1,0 +1,35 @@
+.loader {
+    position: fixed;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(153, 226, 208, 0.4);
+    animation: loadBackground 3s both;
+    z-index: 999;
+    &__logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        border: 6px solid $color-primary;
+        border-color: $color-primary transparent $color-secondary transparent; 
+        animation: spin 1s linear 3;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadBackground {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}

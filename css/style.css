@@ -55,6 +55,7 @@ table {
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -110,6 +111,40 @@ footer a i {
   margin-right: 15px;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(153, 226, 208, 0.4);
+  animation: loadBackground 3s both;
+  z-index: 999;
+}
+.loader__logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 6px solid #9356DC;
+  border-color: #9356DC transparent #FF79DA transparent;
+  animation: spin 1s linear 3;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loadBackground {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 .location {
   display: flex;
   justify-content: center;
