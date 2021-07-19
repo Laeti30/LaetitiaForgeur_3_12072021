@@ -1,10 +1,8 @@
 .restaurant {
     padding: 50px 20px;
     background: $color-lightgrey;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     @include breakpoint(tablet) {
-        align-items: center;
         &__List {
             display: flex;
             justify-content: space-around;
