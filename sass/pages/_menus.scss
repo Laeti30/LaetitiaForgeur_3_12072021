@@ -69,21 +69,15 @@ main {
         overflow:hidden;
         &__name {
             width: 80%;
-            padding: 10px 0 10px 15px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            padding: 10px 0 10px 10px;
             @include transition-timing(width);
             h3 {
                 font-weight: 500;
                 font-size: 1.1rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
             }
             p {
                 font-weight: 300;
-                font-size: 1rem;
+                font-size: .96rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -111,6 +105,14 @@ main {
 .menuList__dish:hover {
     .menuList__dish__name {
         width: 60%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
     .checkbox {
         display: flex;
@@ -145,7 +147,7 @@ main {
     100% {
         opacity: 1;
         transform: translateX(0px);
-        width:70px;
+        width:65px;
     }
 }
 

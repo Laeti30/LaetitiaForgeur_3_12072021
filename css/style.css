@@ -298,6 +298,7 @@ input::placeholder {
   border-radius: 3px;
   padding: 7px 10px;
   font-weight: 700;
+  font-size: 0.85rem;
 }
 .restaurantBox__Data {
   display: flex;
@@ -438,22 +439,16 @@ main img {
 }
 .menuList__dish__name {
   width: 80%;
-  padding: 10px 0 10px 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding: 10px 0 10px 10px;
   transition: width 400ms linear;
 }
 .menuList__dish__name h3 {
   font-weight: 500;
   font-size: 1.1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menuList__dish__name p {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.96rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -477,6 +472,14 @@ main img {
 
 .menuList__dish:hover .menuList__dish__name {
   width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menuList__dish:hover .menuList__dish__name h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menuList__dish:hover .checkbox {
   display: flex;
@@ -513,7 +516,7 @@ main img {
   100% {
     opacity: 1;
     transform: translateX(0px);
-    width: 70px;
+    width: 65px;
   }
 }
 @keyframes iconRotation {
