@@ -8,7 +8,16 @@
     i {
         margin-right: 20px;
     }
-    p {
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    &::placeholder {
+        font-family:'Roboto', sans-serif;
         font-weight: 500;
+        font-size: 1rem;
+        color: black;
+        opacity: .8;
     }
 }

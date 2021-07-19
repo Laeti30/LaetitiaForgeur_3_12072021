@@ -78,6 +78,7 @@ h1 {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 63px;
   position: relative;
 }
@@ -156,8 +157,17 @@ footer a i {
 .location i {
   margin-right: 20px;
 }
-.location p {
+
+input {
+  border: none;
+  background-color: transparent;
+}
+input::placeholder {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  opacity: 0.8;
 }
 
 .presentation {
@@ -424,6 +434,7 @@ main img {
   box-shadow: 0 5px 10px #cfcfcf;
   margin-bottom: 15px;
   line-height: 1.5;
+  overflow: hidden;
 }
 .menuList__dish__name {
   width: 80%;
