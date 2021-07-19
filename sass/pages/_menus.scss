@@ -12,8 +12,6 @@ main {
     border-radius: 30px 30px 0 0;
     padding-bottom: 30px;
     background: $color-lightgrey;
-    /*position: absolute;
-    top: 280px;*/
     transform: translateY(-50px);
     @include breakpoint(desktop) {
         display: flex;

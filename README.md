@@ -7,7 +7,7 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 Phase 1 : Développer un site proposant le menu de 4 grands restaurants parisiens
 Phase 2 : Permettre la réservation en ligne et la composition de menus
 
-Une démo du site peut être consultée via le lien suivant : 
+Une démo du site peut être consultée via le lien suivant : https://laeti30.github.io/LaetitiaForgeur_3_12072021/
 
 ### Fonctionnalités - Contenu
 #### Page d'accueil (x1)
